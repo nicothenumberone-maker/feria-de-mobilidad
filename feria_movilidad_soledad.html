@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feria de Movilidad en Soledad</title>
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --secondary: #f7b731;
+      --dark: #1f2933;
+      --light: #f5f7fa;
+      --white: #ffffff;
+      --muted: #667085;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #08345c);
+      color: var(--white);
+      padding: 56px 20px 42px;
+      text-align: center;
+    }
+
+    header .tag {
+      display: inline-block;
+      background: var(--secondary);
+      color: #111827;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      max-width: 1000px;
+      margin: 0 auto 18px;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 1.1;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: -28px auto 0;
+      padding: 0 18px 50px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .info-card {
+      background: var(--white);
+      padding: 22px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgba(15, 76, 129, 0.12);
+      text-align: center;
+    }
+
+    .info-card span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .info-card h3 {
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(31, 41, 51, 0.08);
+    }
+
+    section h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      border-left: 6px solid var(--secondary);
+      padding-left: 12px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .benefit {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .benefit h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .quote {
+      background: #eef6ff;
+      border-left: 6px solid var(--primary);
+      padding: 22px;
+      border-radius: 14px;
+      font-style: italic;
+      margin-top: 18px;
+    }
+
+    .quote strong {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      color: var(--primary);
+    }
+
+    .helmet {
+      background: linear-gradient(135deg, #fff7e6, #ffffff);
+      border: 2px dashed var(--secondary);
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, var(--secondary), #ffd86b);
+      color: #111827;
+    }
+
+    .cta h2 {
+      border: none;
+      padding: 0;
+      color: #111827;
+    }
+
+    .cta p {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 26px 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 820px) {
+      .info-grid,
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="tag">Feria de Movilidad</div>
+    <h1>En Soledad habrá descuentos, ofertas laborales y cambiatón de cascos</h1>
+    <p>
+      Una jornada para conductores, motociclistas y actores viales con beneficios en SOAT,
+      Revisión Técnico-Mecánica, cursos de conducción, empleo y seguridad vial.
+    </p>
+  </header>
+
+  <main>
+    <div class="info-grid">
+      <div class="info-card">
+        <span>📅</span>
+        <h3>Fecha</h3>
+        <p>Sábado 6 de junio de 2026</p>
+      </div>
+
+      <div class="info-card">
+        <span>⏰</span>
+        <h3>Horario</h3>
+        <p>8:00 a. m. a 4:00 p. m.</p>
+      </div>
+
+      <div class="info-card">
+        <span>📍</span>
+        <h3>Lugar</h3>
+        <p>Cancha techada del Polideportivo del barrio Hipódromo</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>¿De qué se trata?</h2>
+      <p>
+        El Instituto de Tránsito de Soledad realizará una nueva Feria de Movilidad,
+        un espacio que reunirá a empresas privadas e instituciones aliadas para ofrecer
+        beneficios, descuentos, oportunidades laborales y servicios dirigidos a los actores
+        viales del municipio.
+      </p>
+      <p class="note">
+        La atención será por orden de llegada. No se requiere cita previa ni inscripción.
+      </p>
+    </section>
+
+    <section>
+      <h2>Beneficios disponibles</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <h3>🚗 Descuentos en SOAT y Revisión Técnico-Mecánica</h3>
+          <p>Con el apoyo de los CDA P900 y Carnaval.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>🪪 Licenciatón con tarifas especiales</h3>
+          <p>Participan CEA Soledad, CEA Los Robles, Maestros al Volante y Autovía.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>📄 Prescripción de comparendos</h3>
+          <p>Procesos adelantados por el Instituto de Tránsito de Soledad.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>💼 Oportunidades laborales</h3>
+          <p>Yango vinculará motocarristas y Transportes La Carolina abrirá convocatoria para conductores.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>🛞 Seguridad vial y simuladores</h3>
+          <p>Capacitaciones y actividades prácticas para promover una movilidad más segura.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>⛽ Conversión gratuita a gas vehicular</h3>
+          <p>La empresa Valgas ofrecerá conversiones gratuitas de gasolina a gas vehicular.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="helmet">
+      <h2>Cambiatón de Cascos</h2>
+      <p>
+        Uno de los espacios más esperados será la “Cambiatón de Cascos”, liderada por Xtrong.
+        Los motociclistas podrán renovar su casco llevando, si lo tienen, uno viejo o deteriorado.
+      </p>
+      <p>
+        Para acceder al beneficio, deberán aportar un excedente entre
+        <strong>$80.000 y $200.000</strong>, dependiendo del modelo seleccionado.
+      </p>
+    </section>
+
+    <section>
+      <h2>Aliados participantes</h2>
+      <p>
+        La feria contará con la participación de entidades y empresas como CDA P900,
+        CDA Carnaval, CEA Soledad, CEA Los Robles, Maestros al Volante, Autovía,
+        Yango, Transportes La Carolina, Vehicosta, Renault, Valgas y Xtrong.
+      </p>
+
+      <div class="quote">
+        “Queremos que todos los conductores aprovechen esta gran feria, donde gracias al respaldo
+        de la empresa privada estamos acercando beneficios reales a la comunidad. Más allá de los
+        descuentos y servicios, buscamos fortalecer la cultura vial y promover una movilidad más
+        segura para todos”.
+        <strong>Santander Donado, director del Instituto de Tránsito de Soledad</strong>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Invitación abierta a la comunidad</h2>
+      <p>
+        Conductores, motociclistas y ciudadanos interesados podrán asistir sin inscripción previa
+        para acceder a beneficios, realizar trámites y fortalecer sus conocimientos en seguridad vial.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Información institucional — Feria de Movilidad de Soledad, junio de 2026.
+  </footer>
+
+</body>
+</html>
